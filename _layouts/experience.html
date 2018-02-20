@@ -7,7 +7,7 @@ layout: default
         <ul class="resume-list">
 
             <!-- Experience List -->
-            {% for item in site.data.experience %}
+            {% for item in site.data.experience reversed %}
             <li class="my-3">
                 <div class="card-body">
                     <h3 class="card-title">{{ item.company }}</h3>
@@ -40,34 +40,9 @@ layout: default
     </div>
 
     <h2>My Technical Skills</h2>
+    <!-- todo: split this out -->
 
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card box-shadow">
-                <div class="card-header bg-primary text-white">
-                    Hosting Providers
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><i class="fab fa-fw fa-aws"></i> AWS</li>
-                    <li class="list-group-item"><i class="fab fa-fw fa-google"></i> Google Cloud</li>
-                    <li class="list-group-item"><i class="fab fa-fw fa-magento"></i> Magento Cloud</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="card box-shadow">
-                <div class="card-header bg-primary text-white">
-                    Systems
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Proprietary B2B SaaS</li>
-                    <li class="list-group-item">Magento 1 & 2</li>
-                    <li class="list-group-item">Wordpress</li>
-                    <li class="list-group-item">Shopify</li>
-
-                </ul>
-            </div>
-        </div>
+    <div class="row my-4">
         <div class="col-md-6 mb-4">
             <div class="card box-shadow">
                 <div class="card-header bg-primary text-white">
@@ -84,7 +59,34 @@ layout: default
         <div class="col-md-6 mb-4">
             <div class="card box-shadow">
                 <div class="card-header bg-primary text-white">
-                    JS Frameworks
+                    Cloud Providers
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fab fa-fw fa-aws"></i> AWS</li>
+                    <li class="list-group-item"><i class="fab fa-fw fa-google"></i> Google Cloud</li>
+                    <li class="list-group-item"><i class="fab fa-fw fa-magento"></i> Magento Cloud</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card box-shadow">
+                <div class="card-header bg-primary text-white">
+                    Systems
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Proprietary B2B SaaS</li>
+                    <li class="list-group-item">Craft CMS</li>
+                    <li class="list-group-item">Magento 1 & 2</li>
+                    <li class="list-group-item">Wordpress</li>
+                    <li class="list-group-item">Shopify</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card box-shadow">
+                <div class="card-header bg-primary text-white">
+                    FE JS Frameworks
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">jQuery</li>
@@ -96,12 +98,23 @@ layout: default
         <div class="col-md-6 mb-4">
             <div class="card box-shadow">
                 <div class="card-header bg-primary text-white">
-                    Frontend Frameworks
+                    FE Style Frameworks
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Bootstrap 3/4</li>
                     <li class="list-group-item">Foundation</li>
                     <li class="list-group-item">Bourbon</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card box-shadow">
+                <div class="card-header bg-primary text-white">
+                    PHP Frameworks
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Laravel</li>
+                    <li class="list-group-item">Symfony</li>
                 </ul>
             </div>
         </div>
