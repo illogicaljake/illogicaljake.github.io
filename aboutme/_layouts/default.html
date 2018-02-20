@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body {% if page.layout == 'home' %} class="home"{% endif %}>
+        {% include header.html %}
+        {% include navigation.html %}
+        <main>
+                {{ content }}
+            {% include footer.html %}
+        </main>
+    </body>
+    {% include scripts.html %}
+</html>

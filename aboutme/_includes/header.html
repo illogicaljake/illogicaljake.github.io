@@ -1,0 +1,58 @@
+<!--
+  _   _ _   _   _                   _
+ | | | (_) | |_| |__   ___ _ __ ___| |
+ | |_| | | | __| '_ \ / _ \ '__/ _ \ |
+ |  _  | | | |_| | | |  __/ | |  __/_|
+ |_| |_|_|  \__|_| |_|\___|_|  \___(_)
+
+I love that you're curious enough to check out
+my code. If you're wondering why I did something a certain way,
+talk to me! Chances are, you know a better way,
+and I'd love to learn it.
+-->
+
+<header>
+    <div class="collapse bg-dark" id="navHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 py-4">
+                    <img src="/assets/img/linkedin_photo.jpg" alt="Jake Hamilton" class="img-fluid rounded">
+                </div>
+                <div class="col-sm-5 col-md-5 py-4">
+                    <p class="text-muted">
+                        <strong>Hello there!</strong> I'm Jake Hamilton, an experienced front-end developer in Minneapolis. I've worked with Magento,
+                        Shopify, Wordpress, Craft, and dozens of other great (and not-so-great) platforms.
+                    </p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <label for="navigation" class="text-white sr-only">Navigation</label>
+                    <nav>
+                        <ul id="navigation" class="list-unstyled list-menu">
+                            {% for p in site.pages %}
+                            {% if p.title %}
+                            <li>
+                                <a {% if p.url== page.url %}class="active" {% endif %} href="{{ p.url }}"><i
+                                        class="fas fa-angle-double-right"></i> {{ p.title }}</a>
+                            </li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+            <a href="/" class="navbar-brand d-flex align-items-center">
+                <i class="fas fa-lightbulb"></i>&nbsp;<strong>JH</strong>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navHeader"
+                    aria-controls="navHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-fw fa-bars"></i>
+                <i class="fas fa-fw fa-times"></i>
+            </button>
+        </div>
+    </div>
+</header>

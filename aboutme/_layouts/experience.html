@@ -1,0 +1,162 @@
+---
+layout: default
+---
+<div class="container layout-experience">
+    <div class="z-index-up">
+        {{ content }}
+        <ul class="resume-list">
+
+            <!-- Experience List -->
+            {% for item in site.data.experience %}
+            <li class="my-3">
+                <div class="card-body">
+                    <h3 class="card-title">{{ item.company }}</h3>
+
+                    <p class="card-subtitle"><strong>{{ item.title }}</strong></p>
+
+                    {% if item.years.start == item.years.end %}
+                    <p class="years">{{item.years.start}}</p>
+
+                    {% elsif item.years.end == 'current' %}
+                    <p class="years">{{item.years.start}} &ndash; </p>
+
+                    {% else %}
+                    <p class="years">{{item.years.start}} &ndash; {{item.years.end}}</p>
+
+                    {% endif %}
+
+                    <ul class="responsibilities">
+                        <span class="label sr-only">Responsibilities included:</span>
+                        {% for i in item.responsibilities %}
+                        <li>
+                            <i class="fas fa-angle-right fa-fw"></i> {{i}}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <h2>My Technical Skills</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card box-shadow">
+                <div class="card-header bg-primary text-white">
+                    Hosting Providers
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fab fa-fw fa-aws"></i> AWS</li>
+                    <li class="list-group-item"><i class="fab fa-fw fa-google"></i> Google Cloud</li>
+                    <li class="list-group-item"><i class="fab fa-fw fa-magento"></i> Magento Cloud</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card box-shadow">
+                <div class="card-header bg-primary text-white">
+                    Systems
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Proprietary B2B SaaS</li>
+                    <li class="list-group-item">Magento 1 & 2</li>
+                    <li class="list-group-item">Wordpress</li>
+                    <li class="list-group-item">Shopify</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card box-shadow">
+                <div class="card-header bg-primary text-white">
+                    Core Programming
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fab fa-fw fa-html5"></i> HTML5</li>
+                    <li class="list-group-item"><i class="fab fa-fw fa-css3"></i> CSS3</li>
+                    <li class="list-group-item"><i class="fab fa-fw fa-js"></i> Javascript</li>
+                    <li class="list-group-item"><i class="fab fa-fw fa-php"></i> PHP</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card box-shadow">
+                <div class="card-header bg-primary text-white">
+                    JS Frameworks
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">jQuery</li>
+                    <li class="list-group-item">jQuery UI</li>
+                    <li class="list-group-item">VueJS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card box-shadow">
+                <div class="card-header bg-primary text-white">
+                    Frontend Frameworks
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Bootstrap 3/4</li>
+                    <li class="list-group-item">Foundation</li>
+                    <li class="list-group-item">Bourbon</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card box-shadow">
+                <div class="card-header bg-primary text-white">
+                    Templating
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Twig</li>
+                    <li class="list-group-item">Handlebars</li>
+                    <li class="list-group-item">Liquid (Shopify)</li>
+                    <li class="list-group-item">Blade</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card box-shadow">
+                <div class="card-header bg-primary text-white">
+                    CSS Preprocessors
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">SASS</li>
+                    <li class="list-group-item">LESS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card box-shadow">
+                <div class="card-header bg-primary text-white">
+                    Build Managers
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">NPM</li>
+                    <li class="list-group-item">Bower</li>
+                    <li class="list-group-item">Composer</li>
+                    <li class="list-group-item">Grunt & Gulp</li>
+                    <li class="list-group-item">Webpack</li>
+                    <li class="list-group-item">Codekit</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card box-shadow">
+                <div class="card-header bg-primary text-white">
+                    IDEs
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">PHPStorm</li>
+                    <li class="list-group-item">Sublime Text 2/3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+

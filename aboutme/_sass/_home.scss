@@ -1,0 +1,225 @@
+// Homepage Animation
+
+.frame {
+  height: 330px;
+  padding: 1rem;
+  background-color: $primary;
+}
+
+.frame i {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// SVG circle fill
+
+.svg-circle {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: visible !important; //overrides the reset, which is is more specific
+  margin: 0;
+  padding: 1rem;
+
+}
+
+.circle {
+  stroke-dashoffset: -1571;
+  stroke-dasharray: 1571;
+  stroke-width: 30px;
+  stroke: darken($primary, 10%);;
+  transition: stroke-dashoffset .3s ease;
+  overflow: visible;
+}
+
+.home-cards .card-body .icon {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 50%;
+  width: 100px;
+  margin: 0 0 0 -50px;
+  top: 18%;
+  transition: all .5s ease;
+  &:before {
+    color: $primary;
+  }
+}
+
+.home-cards .card-body .card-title {
+  border: 1px solid darken($primary, 10%);
+  transition: all .5s ease;
+}
+
+.home-cards .card-body {
+  &:hover {
+    .card-title {
+      transform: scale(1.1) translateY(-2.2rem);
+      border: 1px solid white;
+      background-color: darken($primary, 10%);
+    }
+    .icon {
+      transform: scale(.9);
+      &:before {
+        color: darken($primary, 10%);
+      }
+    }
+    .circle {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+
+// Paper Plane: Container
+
+.plane-container {
+  width: 150px;
+  position: relative;
+  margin: 0 auto;
+  z-index: 9;
+  color: white;
+}
+
+//  Paper Plane
+
+.plane {
+  position: relative;
+  transform: translateZ(0);
+  z-index: 9;
+  .fa-fw {
+    position: absolute;
+  }
+}
+
+//  Paper Plane: Animation
+.plane-container {
+  animation: paper-plane-scoping 2s alternate infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes paper-plane-scoping {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(220px);
+  }
+}
+
+.plane {
+  animation-timing-function: ease-in-out;
+  animation: paper-plane-soaring 4s forwards infinite;
+}
+@keyframes paper-plane-soaring {
+  0% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(40deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+//  Clouds
+
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.cloud:before {
+  color: white;
+  position: absolute;
+  transform: scale(1);
+  right: 0;
+  opacity: 1;
+}
+
+.cloud.front:before {
+  z-index: 3;
+}
+
+.cloud.distant:before {
+  z-index: 1;
+}
+
+.cloud.background:before {
+  z-index: 1;
+}
+
+.cloud.smaller:before {
+  transform: scale(.33) translateY(200%);
+}
+
+.cloud.small:before {
+  transform: scale(.75) translateY(100%);
+}
+
+.cloud.big:before {
+  transform: scale(2) translateY(50%);
+}
+
+.cloud.massive:before {
+  transform: scale(4) translateY(100%);
+}
+
+//  Clouds: Animations
+
+.cloud {
+  animation-name: cloud-movement;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+
+.slow {
+  animation-duration: 9.2s;
+}
+
+.slower {
+  animation-duration: 11.2s;
+}
+
+.slowest {
+  animation-duration: 13.5s;
+}
+
+.super-slow {
+  animation-duration: 20.5s;
+}
+
+@keyframes cloud-movement {
+  0% {
+    opacity: 0;
+    transform: translateX(130vw);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+}

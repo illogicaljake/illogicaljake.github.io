@@ -1,0 +1,35 @@
+---
+-
+  client: "Buffalo Wild Wings"
+  desc: ~
+  img: ~
+  tech:
+    - grunt
+    - sass
+    - jquery
+  title: "Franchise Web Templates"
+-
+  client: Coolibar
+  desc: ~
+  img: ~
+  tech:
+    - magento
+    - sass
+  title: Ecommerce
+-
+  client: "Glukos Energy"
+  desc: ~
+  img: ~
+  tech:
+    - magento
+    - craft
+  title: "Ecommerce"
+-
+  client: "Minnesota Twins"
+  desc: ~
+  img: ~
+  tech:
+    - wordpress
+    - sass
+    - jquery
+  title: "Multimedia Experience"

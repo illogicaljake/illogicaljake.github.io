@@ -1,0 +1,57 @@
+-
+  city: Indianapolis
+  company: "Firebelly Marketing"
+  responsibilities:
+    - "Created design and code assets for social media promotions"
+    - "Developed Wordpress themes to match internal or client-driven designs"
+    - "Maintained company blog, including adding imagery to each writer's post"
+  title: "Content Developer"
+  years:
+    end: 2012
+    start: 2010
+-
+  city: Indianapolis
+  company: "Young & Laramore"
+  responsibilities:
+    - "Developed pixel-perfect emails for a list of over 500k people"
+    - "Built internal employee hub for regional brewer"
+    - "Launched new website section for national lawn-care client"
+    - "Assisted in build for Magento 1 store for local gift shop"
+  title: "Web Developer"
+  years:
+    end: 2014
+    start: 2012
+-
+  city: Minneapolis
+  company: Periscope
+  responsibilities:
+    - "Developed and launched new, media-driven sites for divisions of a major candy company."
+    - "Worked with UX to create wireframes for an internal large financial project"
+    - "Led the development on the company's first eCommerce client, with Magento"
+  title: "Web Developer"
+  years:
+    end: 2016
+    start: 2014
+-
+  city: Minneapolis
+  company: "AIMIA Loyalty Marketing"
+  responsibilities:
+    - "Built responsive emails sent to registrants in large, national loyalty programs."
+    - "Created wireframes and page markup for dozens of loyalty portals"
+    - "Worked with company's proprietary CMS to enable new front-end abilities"
+  title: "Frontend Developer"
+  years:
+    end: 2017
+    start: 2016
+-
+  city: Minneapolis
+  company: "Irish Titan"
+  responsibilities:
+    - "With Magento 2, Developed a new eCommerce experience for clothing company Coolibar."
+    - "Developed a Magento 2 module to add dynamic mega-menus to client sites"
+    - "Educated other frontend devs on Magento 2's template system and best practices"
+    - "Led a local Magento Meetup session on working with XML layouts in M2"
+  title: "Frontend Developer"
+  years:
+    end: current
+    start: 2017
