@@ -4,7 +4,7 @@
   responsibilities:
     - "Created design and code assets for social media promotions"
     - "Developed Wordpress themes to match internal or client-driven designs"
-    - "Maintained company blog, including adding imagery to each writer's post"
+    - "Maintained company blog, including adding style and imagery to each writer's post"
   title: "Content Developer"
   years:
     end: 2012
@@ -16,7 +16,6 @@
     - "Developed pixel-perfect emails for a list of over 500k people"
     - "Built internal employee hub for regional brewer"
     - "Launched new website section for national lawn-care client"
-    - "Assisted in build for Magento 1 store for local gift shop"
   title: "Web Developer"
   years:
     end: 2014
@@ -27,18 +26,20 @@
   responsibilities:
     - "Developed and launched new, media-driven sites for divisions of a major candy company."
     - "Worked with UX to create wireframes for an internal large financial project"
-    - "Led the development on the company's first eCommerce client, with Magento"
+    - "Led the development on the company's first eCommerce client"
+    - "Created new accessibility standards for web projects, including ARIA and WCAG 2.0"
   title: "Web Developer"
   years:
     end: 2016
     start: 2014
 -
   city: Minneapolis
-  company: "AIMIA Loyalty Marketing"
+  company: "AIMIA Customer Loyalty"
   responsibilities:
+    - "Worked with company's proprietary CMS to enable new front-end abilities"
+    - "Traveled across states to work with platform teams and customer teams."
     - "Built responsive emails sent to registrants in large, national loyalty programs."
     - "Created wireframes and page markup for dozens of loyalty portals"
-    - "Worked with company's proprietary CMS to enable new front-end abilities"
   title: "Frontend Developer"
   years:
     end: 2017
@@ -47,10 +48,10 @@
   city: Minneapolis
   company: "Irish Titan"
   responsibilities:
-    - "With Magento 2, Developed a new eCommerce experience for clothing company Coolibar."
+    - "Led development for a new eCommerce experience for a specialized clothing retailer."
     - "Developed a Magento 2 module to add dynamic mega-menus to client sites"
     - "Educated other frontend devs on Magento 2's template system and best practices"
-    - "Led a local Magento Meetup session on working with XML layouts in M2"
+    - "Attended & led local Magento Meetup sessions on working with XML layouts in M2"
   title: "Frontend Developer"
   years:
     end: current
