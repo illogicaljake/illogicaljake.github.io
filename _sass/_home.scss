@@ -1,4 +1,4 @@
-// Homepage Animation
+// Homepage styles
 
 .frame {
   height: 330px;
@@ -15,21 +15,33 @@
 // SVG circle fill
 
 .svg-circle {
+  max-width: 100%;
   width: 100%;
-  height: auto;
+  height: 100%;
   position: relative;
   overflow: visible !important; //overrides the reset, which is is more specific
   margin: 0;
   padding: 1rem;
 
 }
+.circle-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  //padding-bottom: 100%;
+  height: auto;
+  overflow: hidden;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
 
 .circle {
   stroke-dashoffset: -1571;
   stroke-dasharray: 1571;
   stroke-width: 30px;
-  stroke: darken($primary, 10%);;
-  transition: stroke-dashoffset .3s ease;
+  stroke: $primary-dark;
+  transition: stroke-dashoffset .5s ease;
   overflow: visible;
 }
 
@@ -37,33 +49,36 @@
   position: absolute;
   margin: 0;
   padding: 0;
-  top: 0;
-  left: 50%;
-  width: 100px;
-  margin: 0 0 0 -50px;
-  top: 18%;
-  transition: all .5s ease;
+  //top: 0;
+  //left: 50%;
+  //width: 100px;
+  //margin: 0 0 0 -50px;
+  transition: all .33s ease-out;
   &:before {
     color: $primary;
   }
 }
 
+.home-cards {
+  .card-text {
+    padding: 0 2rem
+  }
+}
+
 .home-cards .card-body .card-title {
-  border: 1px solid darken($primary, 10%);
   transition: all .5s ease;
 }
 
 .home-cards .card-body {
   &:hover {
     .card-title {
-      transform: scale(1.1) translateY(-2.2rem);
-      border: 1px solid white;
-      background-color: darken($primary, 10%);
+      transform: scale(1.2) translateY(-2.2rem);
+      background-color: $primary-dark;
     }
     .icon {
       transform: scale(.9);
       &:before {
-        color: darken($primary, 10%);
+        color: $primary-dark;
       }
     }
     .circle {
@@ -71,6 +86,11 @@
     }
   }
 }
+
+// Paper plane animation
+
+// inspired by Codepen user JenQ
+// https://codepen.io/ItsJonQ/pen/yvfDF
 
 
 // Paper Plane: Container
@@ -89,12 +109,17 @@
   position: relative;
   transform: translateZ(0);
   z-index: 9;
+  i {
+    text-shadow: 0 0 $primary;
+  }
   .fa-fw {
     position: absolute;
   }
 }
 
+
 //  Paper Plane: Animation
+
 .plane-container {
   animation: paper-plane-scoping 2s alternate infinite;
   animation-timing-function: ease-in-out;
@@ -134,6 +159,7 @@
   }
 }
 
+
 //  Clouds
 
 .clouds {
@@ -143,7 +169,8 @@
   right: 0;
   bottom: 0;
   overflow: hidden;
-  transform: translateZ(0);
+  transform: translateZ(0); //enables GPU acceleration
+  opacity: .9;
 }
 
 .cloud:before {
@@ -159,7 +186,7 @@
 }
 
 .cloud.distant:before {
-  z-index: 1;
+  z-index: 2;
 }
 
 .cloud.background:before {
@@ -181,6 +208,7 @@
 .cloud.massive:before {
   transform: scale(4) translateY(100%);
 }
+
 
 //  Clouds: Animations
 
